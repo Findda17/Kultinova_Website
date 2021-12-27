@@ -1,0 +1,94 @@
+/* ========== Newsletter =========== */
+.subscribe {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	width: 945px;
+	height: 474px;
+    margin-bottom: 12rem;
+}
+
+    .news__title {
+        display: flex;
+        justify-content: center;
+        font-size: var(--big-font-size);
+        color: var(--title-color);
+    }
+
+    .news__text {
+        display: flex;
+        padding: 4rem 4rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        justify-content: center;
+        text-align: center;
+        font-size: var(--normal-font-size);
+        color: var(--text-color);
+    }
+
+    .news__form form {
+        padding-left: 12rem;
+        padding-right: 12rem;
+        overflow: hidden;
+    }
+
+    .form__email {
+        width: 100%;
+        float: left;
+        padding: 1.5rem 2rem;
+        text-align: left;
+        font-family: inherit;
+        font-size: 1.6rem;
+        outline: 0;
+        border: 1px solid var(--white-color-alt);
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        transition: all .4s;
+        width: 75%;
+        border-right-width: 0;
+    }
+
+    .form__email:focus {
+        border: 1px solid var(--title-color);
+        border-right-width: 0;
+    }
+
+    .form__btn {
+        width: 100%;
+        float: left;
+        padding: 1.5rem 2rem;
+        text-align: center;
+        font-family: inherit;
+        font-size: 1.7rem;
+        outline: 0;
+        background-color: var(--first-color);
+        color: var(--body-color);
+        border: .1rem solid var(--first-color);
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
+        transition: all .4s;
+        width: 25%;
+        cursor: pointer;
+    }
+
+    .form__btn:hover {
+        background-color: var(--first-color-alt);
+        border-color: var(--first-color-alt);
+    }
+
+    .news__terms {
+        display: flex;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .news__terms input {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .news__terms input:checked {
+        background-color: var(--first-color);
+    }

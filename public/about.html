@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--=============== Favicon ===============-->
+        <link rel="shortcut icon" href="/public/assets/img/favicon.ico" type="image/x-icon">
+        <!--=============== Swiper CSS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <!--=============== Remixicons ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!--=============== Custom StyleSheet ===============-->
+        <link rel="stylesheet" href="/public/assets/scss/styles.css">
+        <title>GreenVibes - Tienda Online</title>
+    </head>
+    <body>
+        <!--=============== Header ===============-->
+        <header class="header" id="header">
+            <nav class="nav">
+                <div class="navbar" id="navbar">
+                    <a href="#">
+                        <img src="/public/assets/img/logo.png" class="nav__brand" alt="GreenVibes">
+                    </a>    
+
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="index.html" class="navbar__link">Inicio</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="about.html" class="navbar__link active-link">Acerca De</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Productos</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">FAQs</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Contactanos</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar__shopping">
+                        <a href="#" class="navbar__heart" id="heart">
+                            <i class="ri-heart-3-line"></i>
+                        </a>
+                        <a href="#" class="navbar__cart" id="cart-shop">
+                            <i class="ri-shopping-bag-line"></i>
+                            <span>0</span>
+                        </a>
+                        <a href="#" class="navbar__btn signin">
+                            Iniciar sesión
+                        </a>
+                    </div>
+                    
+                    <div class="navbar__close" id="navbar-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--=============== Cart ===============-->
+        <div class="cart" id="cart">
+            <i class="ri-close-line cart__close" id="cart-close"></i>
+            <h2 class="cart__title-center">Mi carrito</h2>
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="/public/assets/img/featured1.png" alt="featured1" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Articulo 1</h3>
+                        <span class="cart__price">$7.000</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-7-line cart__amount-trash"></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="/public/assets/img/featured2.png" alt="featured2" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Articulo 2</h3>
+                        <span class="cart__price">$7.000</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="cart__amount-number">2</span>
+
+                                <span class="cart__amount-box">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-7-line cart__amount-trash"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="/public/assets/img/featured3.png" alt="featured3" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Articulo 3</h3>
+                        <span class="cart__price">$7.000</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="cart__amount-number">3</span>
+
+                                <span class="cart__amount-box">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-7-line cart__amount-trash"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 items</span>
+                <span class="cart__prices-total">$21.000</span>
+            </div>
+        </div>
+        <!--=============== Main ===============-->
+        <main class="main">
+            <!--=============== About ===============-->
+            <section class="about section container" id="about">
+                <div class="about__container">
+                    <img src="/public/assets/img/about.png" class="about__img">
+                    <div class="about__data">
+                        <h2 class="about__title">Quiénes somos realmente & <br> por qué elegirnos</h2>
+                        <p class="about__description">Somos una empresa con amplia trayectoria, <br> satisfaciendo a nuestros más exigentes clientes y  <br>dejando huella en cada una de nuestras entregas</p>
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Te damos guías para proteger y cuidar tus plantas.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Somos puntuales en la entrega de cualquier pedido.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Ofrecemos plantas de alta calidad.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Contamos con el mejor servicio de atención al cliente.
+                            </p>
+                        </div>
+                        <a href="#" class="about__btn">
+                            Comprar ahora <i class="ri-arrow-right-down-line about___icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--==================== Team ====================-->
+            <section class="team section container" id="team">
+                <h2 class="team__title">Nuestro Equipo</h2>
+                <div class="team__container">
+                    <div class="team__card">
+                        <img src="/public/assets/img/team1.jpg" alt="Person1" class="team__img">
+                        <h3 class="team__name">Laura Ortiz</h3>
+                        <span class="team__job">Director General y Fundador</span>
+                        <p class="team__about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam magni dolore repellendus obcaecati ipsam error corporis quidem ab fugit.</p>
+                        <div class="team__social">
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="team__card">
+                        <img src="/public/assets/img/team2.jpg" alt="Person2" class="team__img">
+                        <h3 class="team__name">Felipe Castaño</h3>
+                        <span class="team__job">Cofundador</span>
+                        <p class="team__about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam magni dolore repellendus obcaecati ipsam error corporis quidem ab fugit.</p>
+                        <div class="team__social">
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="team__card">
+                        <img src="/public/assets/img/team3.jpg" alt="Person3" class="team__img">
+                        <h3 class="team__name">Miguel Silva</h3>
+                        <span class="team__job">Director de proyectos</span>
+                        <p class="team__about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam magni dolore repellendus obcaecati ipsam error corporis quidem ab fugit.</p>
+                        <div class="team__social">
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="team__link">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--=============== Footer ===============-->
+        <footer class="footer section">
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <img src="/public/assets/img/logo.png" alt="GreenVibes">
+                    </a>
+                    <span class="footer__description">Tienda Online</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class="footer__social-link ri-facebook-fill"></i></a>
+                        <a href="#" class="footer__social"><i class="footer__social-link ri-instagram-line"></i></a>
+                        <a href="#" class="footer__social"><i class="footer__social-link ri-whatsapp-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Productos</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Entrega</a></li>
+                        <li><a href="#" class="footer__link">Precios</a></li>
+                        <li><a href="#" class="footer__link">Suculentas y cactus</a></li>
+                        <li><a href="#" class="footer__link">Comprar ahora¡</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Información</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Event</a></li>
+                        <li><a href="#" class="footer__link">Contacta con nosotros</a></li>
+                        <li><a href="#" class="footer__link">Políticas de privacidad</a></li>
+                        <li><a href="#" class="footer__link">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Dirección</h3>
+                    <ul class="footer_direction">
+                        <li><a href="#" class="footer__link">Colombia - Medellín</a></li>
+                        <li><a href="#" class="footer__link">Robledo Cl. 78b #75-181</a></li>
+                        <li><a href="#" class="footer__link">(+57) 000 000 0000</a></li>
+                        <li><a href="#" class="footer__link">soporte@greenvibes.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 Findda. Todos los derechos reservados</p>
+        </footer>
+            <!--=============== ScrollUp ===============-->
+            <a href="#header" class="scrollup" id="scroll-up"> 
+                <i class="ri-arrow-up-fill scrollup__icon"></i>
+            </a>
+            <!--=============== JQuery ===============-->
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <!--=============== Swiper JS ===============-->
+            <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+            <!--=============== SCROLL REVEAL ===============-->
+            <script src="/public/assets/js/scrollreveal.min.js"></script>
+            <!--=============== Custom JS ===============-->
+            <script src="/public/assets/js/testimonials.js"></script>
+            <script src="/public/assets/js/products.js"></script>
+            <script src="/public/assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+/* ========== Home =========== */
+.home {
+    padding: 7.3rem 0 8rem;
+}
+  
+    .home__container {
+        display: grid;
+        position: relative;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .home__img {
+        width: 400px;
+        order: 1;
+        justify-self: center;
+    }
+  
+    .home__title {
+        font-size: var(--big-font-size);
+        line-height: 140%;
+        margin-bottom: 1.6rem;
+    }
+  
+    .home__description {
+        color: var(--text-color);
+        margin-bottom: 4rem;
+        padding-right: 11.2rem;
+    }
+
+    .home__social {
+        position: absolute;
+        top: 30%;
+        display: grid;
+        justify-items: center;
+        right: -3.8rem;
+        row-gap: 9.2rem;
+    }
+  
+    .home__social-title {
+        font-weight: var(--font-medium);
+        font-size: var(--normal-font-size);
+        color: var(--first-color);
+        position: relative;
+        transform: rotate(90deg);
+    }
+  
+    .home__social-title::after {
+        content: '';
+        position: absolute;
+        height: .2rem;
+        background-color: var(--first-color);
+        width: 2.4rem;
+        right: -60%;
+        top: 45%;
+    }
+  
+    .home__social-links {
+        display: inline-flex;
+        flex-direction: column;
+        row-gap: .4rem;
+    }
+  
+    .home__social-link {
+        font-size: 1.75rem;
+        color: var(--first-color);
+        transition: .3s;
+    }
+  
+    .home__social-link:hover {
+        transform: translateX(.4rem);
+        color: var(--first-color-alt);
+    }

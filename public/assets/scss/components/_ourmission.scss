@@ -1,0 +1,38 @@
+/* ========== Our Mission =========== */
+.ourmission {
+    margin-top: 7rem;
+
+    &__title-section {
+        text-align: center;
+        margin: auto;
+        font-size: var(--big-font-size);
+    }
+
+    &__content {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+    }
+
+    &__details {
+        padding-left: 6rem;
+    }
+
+    &__title {
+        padding-bottom: 1rem;
+        font-size: var(--h1-font-size);
+    }
+
+    &__text {
+        color: var(--text-color);
+    }
+}

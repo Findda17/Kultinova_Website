@@ -1193,4 +1193,55 @@ img {
   font-size: 2.8rem;
   color: var(--first-color);
 }
+
+/* ========== Our Mission =========== */
+.ourmission {
+  margin-top: 7rem;
+}
+
+.ourmission__title-section {
+  text-align: center;
+  margin: auto;
+  font-size: var(--big-font-size);
+}
+
+.ourmission__content {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ourmission__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  height: 250px;
+}
+
+.ourmission__details {
+  padding-left: 6rem;
+}
+
+.ourmission__title {
+  padding-bottom: 1rem;
+  font-size: var(--h1-font-size);
+}
+
+.ourmission__text {
+  color: var(--text-color);
+}
 /*# sourceMappingURL=styles.css.map */

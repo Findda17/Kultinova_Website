@@ -1123,7 +1123,7 @@ img {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  border: 3px solid var(--first-color-lighten);
+  border: 3px solid var(--text-color);
 }
 
 .team__name {

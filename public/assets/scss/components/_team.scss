@@ -18,9 +18,9 @@
     }
 
     &__card {
-        margin: 1rem;
+        margin: 0.5rem;
         padding: 2.2rem;
-        max-width: 30%;
+        max-width: 24%;
         cursor: pointer;
         transition: .3s;
         box-sizing: border-box;
@@ -36,8 +36,8 @@
     }
 
     &__img {
-        width: 25rem;
-        height: 25rem;
+        width: 20rem;
+        height: 20rem;
         border-radius: 50%;
         border: 3px solid var(--first-color-lighten);
     }
@@ -45,13 +45,14 @@
     &__name {
         padding: .2rem;
         font-weight: 600;
-        font-size: var(--h1-font-size);
+        font-size: var(--h2-font-size);
     }
 
     &__job {
         color: var(--text-color);
         font-weight: 400;
         font-style: italic;
+        font-size: 1.5rem;
     }
 
     &__about {
@@ -59,6 +60,23 @@
         margin: 2rem 0;
         font-weight: 400;
         color: var(--title-color);
+        font-size: 1.45rem;
+    }
+
+    &__about1 { 
+        margin-bottom: 4.4rem;
+        padding-top: 1.2rem;
+        font-weight: 400;
+        color: var(--title-color);
+        font-size: 1.45rem;
+    }
+
+    &__about2 {
+        margin-bottom: 4.5rem;
+        padding-top: 1.2rem;
+        font-weight: 400;
+        color: var(--title-color);
+        font-size: 1.45rem;
     }
 
     &__social {

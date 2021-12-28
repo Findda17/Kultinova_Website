@@ -1097,9 +1097,9 @@ img {
 }
 
 .team__card {
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 2.2rem;
-  max-width: 30%;
+  max-width: 24%;
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
@@ -1120,8 +1120,8 @@ img {
 }
 
 .team__img {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   border: 3px solid var(--first-color-lighten);
 }
@@ -1129,13 +1129,14 @@ img {
 .team__name {
   padding: .2rem;
   font-weight: 600;
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
 }
 
 .team__job {
   color: var(--text-color);
   font-weight: 400;
   font-style: italic;
+  font-size: 1.5rem;
 }
 
 .team__about {
@@ -1143,6 +1144,23 @@ img {
   margin: 2rem 0;
   font-weight: 400;
   color: var(--title-color);
+  font-size: 1.45rem;
+}
+
+.team__about1 {
+  margin-bottom: 4.4rem;
+  padding-top: 1.2rem;
+  font-weight: 400;
+  color: var(--title-color);
+  font-size: 1.45rem;
+}
+
+.team__about2 {
+  margin-bottom: 4.5rem;
+  padding-top: 1.2rem;
+  font-weight: 400;
+  color: var(--title-color);
+  font-size: 1.45rem;
 }
 
 .team__social {
@@ -1175,5 +1193,4 @@ img {
   font-size: 2.8rem;
   color: var(--first-color);
 }
-
 /*# sourceMappingURL=styles.css.map */
